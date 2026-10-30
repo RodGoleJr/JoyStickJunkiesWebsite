@@ -1,0 +1,256 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Play:wght@400;700&display=swap');
+
+body {
+    background-color: #ffffff;
+    font-family: "Open Sans", sans-serif;
+    margin: 0;
+}
+
+h1,
+h2,
+h3 {
+    font-family: "Play", sans-serif;
+}
+
+header {
+    background-color: #00195C;
+    color: #ffffff;
+    text-align: center;
+}
+
+header h1 {
+    line-height: 200%;
+    margin: 0;
+    color: white;
+}
+
+nav {
+    font-weight: bold;
+    background-color: #ecececec;
+    text-align: center;
+    line-height: 200%;
+}
+
+h1,
+h2,
+h3 {
+    font-family: "Play", sans-serif;
+    color: #4639c8;
+}
+
+main {
+    max-width: 1000px;
+    margin: 30px auto;
+    padding: 10px;
+}
+
+footer {
+    max-width: 1000px;
+    margin: 30px auto;
+    padding: 10px;
+    font-style: italic;
+    text-align: center;
+}
+
+.logo {
+    max-width: 100%;
+    height: auto;
+    padding-top: 15px;
+}
+
+nav a {
+    text-decoration: none;
+}
+
+.home-hero {
+    background-image: url(images/hero-image.jpg);
+    height: 300px;
+    background-size: cover;
+    background-position: top center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-hero h1 {
+    color: white;
+    text-shadow: 2px 2px 2px black;
+    font-size: 3em;
+    font-weight: normal;
+    margin: 0;
+}
+
+h1 {
+    font-size: 3.5em;
+    margin: 0;
+}
+
+h2 {
+    border-bottom: 2px solid #1c2995;
+    display: flex;
+    padding: 5px;
+    font-size: 2em;
+    font-weight: 100;
+}
+
+h3 {
+    font-size: 1.7em;
+}
+
+.logo {
+    max-width: 100%;
+    height: auto;
+    padding-top: 15px;
+}
+
+.log:hover {
+    opacity: 0.8;
+}
+
+nav {
+    background-color: #0b1d3a;
+    width: 100%;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 10px;
+}
+
+nav li {
+    display: inline;
+    padding: 10px;
+}
+
+nav a,
+nav a:link,
+nav a:visited {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    font-family: sans-serif;
+    font-size: 16px;
+    letter-spacing: 0.06em;
+}
+
+nav a:hover,
+nav a:active {
+    color: #b6dcff;
+}
+
+.float-right {
+    float: right;
+    max-width: 40%;
+    height: auto;
+    border: 8px solid #ffffff;
+    border-radius: 4px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    margin-left: 20px;
+    margin-bottom: 15px;
+}
+
+.float-left {
+    float: left;
+    max-width: 40%;
+    height: auto;
+    border: 8px solid #ffffff;
+    border-radius: 4px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    margin-right: 20px;
+    margin-top: 18px;
+    margin-bottom: 15px;
+}
+
+.text-box {
+    float: right;
+    max-width: 40%;
+    margin: 8px 20px;
+    background-color: #4131d4;
+    border-radius: 2;
+    padding: 2%;
+    font-style: italic;
+}
+
+.text-box .h2Text {
+    color: #e2e0e9;
+    font-size: 1.5em;
+}
+
+.text-box p {
+    color: #e2e0e9;
+    line-height: 1.5;
+}
+
+a.button-design{
+    color: white;
+    background-color: #1a2b4c;
+    border-radius: 3px;
+    text-decoration: none;
+    padding: 8px 25px;
+    font-weight: bold;
+    display: inline-block;
+}
+
+a.button-design:link{
+    background-color: #1c2995;
+}
+
+a.button-design:hover{
+    background-color: #e8133b;
+}
+
+@media only screen and (max-width: 1024px){
+    h1{
+        font-size: 2.5em;
+    }
+
+    h2{
+        font-size: 1.5em;
+    }
+
+    h3{
+        font-size: 1.3em;
+    }
+
+    main,footer{
+        width: 90%;
+    }
+}
+
+@media only screen and (max-width: 768px){
+    h1{
+        font-size: 2em;
+    }
+
+    .home-hero{
+        height: 125px;
+    }
+
+    .home-hero h1{
+        height: 125px;
+        font-size: 1.5em;
+        padding-top: 45px;
+    }
+
+    .float-right, .float-left{
+        display: none;
+    }
+
+    .text-box{
+        float: none;
+        max-width: 100%;
+        display: block;
+    }
+
+    nav ul{
+        padding: 0;
+        margin: 0;
+    }
+
+    nav li{
+        display: block;
+        padding: 0.5em 0;
+        border: 1px solid gray;
+    }
+}
